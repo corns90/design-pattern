@@ -13,6 +13,10 @@ public class StarbuzzCoffee {
         System.out.println(beverage2.getDescription()
             + " $" + String.format("%.2f", beverage2.cost()));
 
+        Beverage darkRoast = new Whip(new Mocha(new Mocha(new DarkRoast())));
+        System.out.println(darkRoast.getDescription()
+            + " $" + String.format("%.2f", darkRoast.cost()));
+
 
         Beverage beverage3 = new HouseBlend();
         beverage3.setSize(Beverage.Size.VENTI);
